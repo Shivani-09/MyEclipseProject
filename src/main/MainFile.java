@@ -1,7 +1,10 @@
 package main;
 
-import java.io.*;
-import java.util.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -411,6 +414,18 @@ public class MainFile {
         
         
         // ----------------------------------------------------------	
-       	// 
+       	// Finding majority elements using nested for loop
+        
+        MajorityElementsUsingForLoop me = new MajorityElementsUsingForLoop();
+		
+		int[] list = {6, 5, 5,9,9,9,6,6,6};
+		me.majorityEles(list);
+		System.out.println("Majority of elements in array is " + me.majorityEles(list));
+
+		System.out.println(" ");
+        
+        
+        // ----------------------------------------------------------	
+       	//
     }
 }
