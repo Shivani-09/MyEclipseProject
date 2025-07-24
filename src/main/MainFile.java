@@ -283,7 +283,7 @@ public class MainFile {
 		
 		System.out.println(" ");
 		// ----------------------------------------------------------
-				// stringbuilder practice
+				// stringBuilder practice
 		
 		StringBuilder sb = new StringBuilder("Hello"); //use sb when fast performance is important
 		 
@@ -354,7 +354,7 @@ public class MainFile {
 		System.out.println(" ");
 		
 		// ----------------------------------------------------------	
-	// word count using hashmap:
+	// word count using HashMap:
 		
 		HashMap <String, Integer> word = new HashMap<>();
 		
@@ -377,10 +377,21 @@ public class MainFile {
 		}
 		
 		System.out.println(" ");
+		
 		// ----------------------------------------------------------	
-	// word count using hashmap:
+	// 2sum using HashMap:
 		
 		
+		Solution sum = new Solution();
+		int[] nums1 = {2, 7, 11, 15};
+        int target1 = 9;
+        int[] result1 = sum.twoSum(nums1, target1);
+        System.out.println("Nums: [2, 7, 11, 15], Target: 9 -> Result: [" + result1[0] + ", " + result1[1] + "]");
+
+        System.out.println(" ");
+     // ----------------------------------------------------------	
+    	// 
+    		
 		
     }
 }
