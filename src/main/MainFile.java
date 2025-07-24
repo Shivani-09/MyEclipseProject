@@ -389,9 +389,28 @@ public class MainFile {
         System.out.println("Nums: [2, 7, 11, 15], Target: 9 -> Result: [" + result1[0] + ", " + result1[1] + "]");
 
         System.out.println(" ");
+        
+        
      // ----------------------------------------------------------	
-    	// 
+    	// MajorityElement example:
     		
-		
+        MajorityElement sol = new MajorityElement();
+
+        
+        int[] nums = {3, 2, 3};
+        System.out.println("Nums: [3, 2, 3] -> Majority Element: " + sol.majorityElement(nums));
+
+        int[] nums2 = {2, 2, 1, 1, 1, 2, 2};
+        System.out.println("Nums: [2, 2, 1, 1, 1, 2, 2] -> Majority Element: " + sol.majorityElement(nums2));
+        
+        int[] nums3 = {6, 5, 5};
+        System.out.println("Nums: [6, 5, 5] -> Majority Element: " + sol.majorityElement(nums3));
+    
+        
+        System.out.println(" ");
+        
+        
+        // ----------------------------------------------------------	
+       	// 
     }
 }
