@@ -1,7 +1,10 @@
 package main;
 
-import java.io.*;
-import java.util.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -283,7 +286,7 @@ public class MainFile {
 		
 		System.out.println(" ");
 		// ----------------------------------------------------------
-				// stringbuilder practice
+				// stringBuilder practice
 		
 		StringBuilder sb = new StringBuilder("Hello"); //use sb when fast performance is important
 		 
@@ -354,7 +357,7 @@ public class MainFile {
 		System.out.println(" ");
 		
 		// ----------------------------------------------------------	
-	// word count using hashmap:
+	// word count using HashMap:
 		
 		HashMap <String, Integer> word = new HashMap<>();
 		
@@ -377,10 +380,52 @@ public class MainFile {
 		}
 		
 		System.out.println(" ");
+		
 		// ----------------------------------------------------------	
-	// word count using hashmap:
+	// 2sum using HashMap:
 		
 		
+		Solution sum = new Solution();
+		int[] nums1 = {2, 7, 11, 15};
+        int target1 = 9;
+        int[] result1 = sum.twoSum(nums1, target1);
+        System.out.println("Nums: [2, 7, 11, 15], Target: 9 -> Result: [" + result1[0] + ", " + result1[1] + "]");
+
+        System.out.println(" ");
+        
+        
+     // ----------------------------------------------------------	
+    	// MajorityElement example:
+    		
+        MajorityElement sol = new MajorityElement();
+
+        
+        int[] nums = {3, 2, 3};
+        System.out.println("Nums: [3, 2, 3] -> Majority Element: " + sol.majorityElement(nums));
+
+        int[] nums2 = {2, 2, 1, 1, 1, 2, 2};
+        System.out.println("Nums: [2, 2, 1, 1, 1, 2, 2] -> Majority Element: " + sol.majorityElement(nums2));
+        
+        int[] nums3 = {6, 5, 5};
+        System.out.println("Nums: [6, 5, 5] -> Majority Element: " + sol.majorityElement(nums3));
+    
+        
+        System.out.println(" ");
+        
+        
+        // ----------------------------------------------------------	
+       	// Finding majority elements using nested for loop
+        
+        MajorityElementsUsingForLoop me = new MajorityElementsUsingForLoop();
 		
+		int[] list = {6, 5, 5,9,9,9,6,6,6};
+		me.majorityEles(list);
+		System.out.println("Majority of elements in array is " + me.majorityEles(list));
+
+		System.out.println(" ");
+        
+        
+        // ----------------------------------------------------------	
+       	//
     }
 }

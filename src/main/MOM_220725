@@ -1,0 +1,26 @@
+-What is server?
+An empty machine which is conencted to different devices.
+Example: 
+
+
+
+		---Server---
+	 \			/
+	  \Request	       /Response
+	   \		      /
+	    \		     /
+	      ---End User---
+
+Example1: Internet:
+
+EndUser (Client) -> Requests a meetingi G.Meets --
+^						| 
+|(Responds By giving meetinng link)	       	|
+|					        |
+|					       	|
+^------------	Google Server	<----------------
+
+-Deal with Git Conflicts by regular commits and push to feature branch
+
+
+		  
